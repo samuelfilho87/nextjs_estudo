@@ -1,5 +1,6 @@
+import SEO from '@/components/SEO';
 import { GetServerSideProps } from 'next';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Title } from '../styles/pages/Home';
 
 interface IProduct {
@@ -34,6 +35,8 @@ export default function Home({ recommendedProducts }: HomeProps) {
 
   return (
     <div>
+      <SEO title="DevCommerce, o seu e-commerce top das galáxias!" shouldExludeTitleSuffix />
+
       <section>
         <Title>Products</Title>
 
